@@ -16,7 +16,7 @@ print ("   \_/\_/ \___|_.__/       \____|_|  \__,_| \_/\_/ |_|\___|_|    " + col
 print
 
 def main():
-    URL = raw_input(colors.GREEN + "WEBSITE : " + colors.STOP)
+    URL = input(colors.GREEN + "WEBSITE : " + colors.STOP)
 
     print (colors.WARNING)
 
@@ -40,9 +40,10 @@ def main():
     link_list = list(dir_links.values())
     link_list = list(dict.fromkeys(link_list))
 
-    print('\x1b[6;30;42m' + 'Directories on website '+ URL + ' : ' + '\x1b[0m')
-
+    print('\x1b[6;30;42m' + 'Directories on website: '+ URL + ' : ' + '\x1b[0m')
+    print('\n' + colors.WARNING + str(len(link_list)) + " Directories Found!" + colors.STOP)
     for x in link_list:
         print (x)
     print (colors.RED + "-"*100 + colors.STOP)
+   
 main() 
