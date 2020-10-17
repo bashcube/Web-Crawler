@@ -27,7 +27,7 @@
   WEBSITE : +++Enter-Website-Name+++
   ```
   
-  * ## Description:
+ * ## Description:
     <p>
     The following code uses beautifulSoup and request library to get the 
     href tags from the index page of the website provided.
