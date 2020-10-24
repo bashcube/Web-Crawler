@@ -1,20 +1,19 @@
 # Web-Crawler
 
 * ## Requirements:
-  You should have python installed on your local machine along
-  with following libraries:
-  * html5lib
-  * bs4
+  You should have python installed on your local machine.
+  Install the following packages to run the script.
   ```bash
   $ pip install html5lib
   $ pip install bs4
   ```
   
 * ## Usage:
-  Clone the repo on your local machine using command:
+  Clone the repository on your local machine using command:
   ```bash
   $ git clone https://github.com/bashcude/Web-Crawler.git
   ```
+  
   Run the code using following commands:
   ```bash
   $ cd Web-Crawler
@@ -28,16 +27,13 @@
   WEBSITE : +++Enter-Website-Name+++
   ```
   
-  * ## Description:
+ * ## Description:
     <p>
-    The following code uses requests and bs4 library to get the 
+    The following code uses beautifulSoup and request library to get the 
     href tags from the index page of the website provided.
     Then it eleminates links leading to other websites and prints the 
     directories of the website's folder.</p>
     <p>
-    This can be prevented by adding crawl delay of reasonable time 
-    which will make the process time consuming/boring and possibly 
-    stopping the crawler.
-    Another way of stopping the crawler is by disallowing all search 
-    engines from accessing the folders/files.
+    The result is a file containing the names of directories listed on the 
+    site's page.
     </p>
